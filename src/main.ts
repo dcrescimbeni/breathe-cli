@@ -8,7 +8,7 @@ program
   .version('0.1.0')
   .description('Guided breathing for your terminal')
   .option('-p, --pattern <box|478>', 'breathing pattern', 'box')
-  .option('-c, --cycles <number>', 'number of cycles (default 4)', '4')
+  .option('-c, --cycles <number>', 'number of cycles', '4')
   .parse(process.argv)
 
 const options = program.opts();
@@ -64,6 +64,8 @@ const main = async () => {
   phaseSpinner.spinner = activeSpinner
   phaseSpinner.start();
 
+  console.log("")
+  console.log("")
   phaseSpinner.text = chalk.white(
     `Take a minute for ${options.pattern === 'box' ? 'Box' : '4-7-8'
     } breathing. ${cycles} cycles`
