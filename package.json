@@ -1,0 +1,29 @@
+{
+  "name": "breathe-cli",
+  "version": "0.1.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "bin": "./dist/main.js",
+  "type": "module",
+  "keywords": [
+    "breathing"
+  ],
+  "author": "Dino Crescimbeni",
+  "license": "ISC",
+  "description": "Guided breathing for your terminal",
+  "homepage": "https://github.com/dcrescimbeni/breathe-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dcrescimbeni/breathe-cli.git"
+  },
+  "dependencies": {
+    "@types/node": "^22.15.29",
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "ora": "^8.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
